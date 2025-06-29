@@ -5,10 +5,33 @@ compatibility_date = "2025-06-29"
 [vars]
 SUPABASE_URL = "https://iskxnyxbqrjebyxkmzig.supabase.co"
 SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imlza3hueXhicXJqZWJ5eGttemlnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTEyMDM4NTEsImV4cCI6MjA2Njc3OTg1MX0.RBi6lok70-tSPC30Akq-x_Nc0A4s_Xssx3VgHLx-P3w"
-# INFLUXDB_URL y INFLUXDB_TOKEN se configurarán más adelante
-# OPENAI_API_KEY se debe configurar como secreto
+# Valores por defecto para InfluxDB (se pueden sobrescribir con secretos)
+INFLUXDB_BUCKET = "sensores"
 
+# KV Namespace para sesiones
+# IMPORTANTE: Reemplazar estos IDs después de crear los namespaces
 [[kv_namespaces]]
 binding = "SESSIONS"
-id = "your-kv-namespace-id"
-preview_id = "your-kv-namespace-preview-id"
+id = "your-kv-namespace-id"        # Reemplazar con el ID real
+preview_id = "your-kv-namespace-preview-id"  # Reemplazar con el preview ID real
+
+# Configuración de build
+[build]
+command = "npm install"
+
+# Límites y configuración
+[limits]
+cpu_ms = 50
+
+[placement]
+mode = "smart"
+
+# Variables de entorno para desarrollo local
+[env.development.vars]
+ENVIRONMENT = "development"
+LOG_LEVEL = "debug"
+
+# Variables de entorno para producción
+[env.production.vars]
+ENVIRONMENT = "production"
+LOG_LEVEL = "error"
