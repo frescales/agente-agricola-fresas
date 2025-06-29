@@ -1,0 +1,50 @@
+# Datos de ejemplo para InfluxDB
+# Usar con: influx write -b sensores -f influx-sample-data.txt
+
+# Datos de temperatura (°C)
+greenhouse_sensors,location=INV-A,sensor_id=TEMP-001 temperature=22.5 1719670000000000000
+greenhouse_sensors,location=INV-A,sensor_id=TEMP-001 temperature=23.1 1719670300000000000
+greenhouse_sensors,location=INV-A,sensor_id=TEMP-001 temperature=23.8 1719670600000000000
+greenhouse_sensors,location=INV-A,sensor_id=TEMP-001 temperature=24.2 1719670900000000000
+greenhouse_sensors,location=INV-A,sensor_id=TEMP-001 temperature=24.5 1719671200000000000
+greenhouse_sensors,location=INV-A,sensor_id=TEMP-001 temperature=24.1 1719671500000000000
+greenhouse_sensors,location=INV-A,sensor_id=TEMP-001 temperature=23.5 1719671800000000000
+greenhouse_sensors,location=INV-A,sensor_id=TEMP-001 temperature=22.8 1719672100000000000
+
+# Datos de humedad (%)
+greenhouse_sensors,location=INV-A,sensor_id=HUM-001 humidity=65.3 1719670000000000000
+greenhouse_sensors,location=INV-A,sensor_id=HUM-001 humidity=64.8 1719670300000000000
+greenhouse_sensors,location=INV-A,sensor_id=HUM-001 humidity=63.2 1719670600000000000
+greenhouse_sensors,location=INV-A,sensor_id=HUM-001 humidity=62.5 1719670900000000000
+greenhouse_sensors,location=INV-A,sensor_id=HUM-001 humidity=61.8 1719671200000000000
+greenhouse_sensors,location=INV-A,sensor_id=HUM-001 humidity=63.4 1719671500000000000
+greenhouse_sensors,location=INV-A,sensor_id=HUM-001 humidity=65.1 1719671800000000000
+greenhouse_sensors,location=INV-A,sensor_id=HUM-001 humidity=66.2 1719672100000000000
+
+# Datos de pH
+greenhouse_sensors,location=INV-A,sensor_id=PH-001 ph=6.2 1719670000000000000
+greenhouse_sensors,location=INV-A,sensor_id=PH-001 ph=6.1 1719670300000000000
+greenhouse_sensors,location=INV-A,sensor_id=PH-001 ph=6.0 1719670600000000000
+greenhouse_sensors,location=INV-A,sensor_id=PH-001 ph=5.9 1719670900000000000
+greenhouse_sensors,location=INV-A,sensor_id=PH-001 ph=6.0 1719671200000000000
+greenhouse_sensors,location=INV-A,sensor_id=PH-001 ph=6.1 1719671500000000000
+greenhouse_sensors,location=INV-A,sensor_id=PH-001 ph=6.2 1719671800000000000
+greenhouse_sensors,location=INV-A,sensor_id=PH-001 ph=6.3 1719672100000000000
+
+# Datos de conductividad eléctrica (mS/cm)
+greenhouse_sensors,location=INV-A,sensor_id=EC-001 ec=1.8 1719670000000000000
+greenhouse_sensors,location=INV-A,sensor_id=EC-001 ec=1.9 1719670300000000000
+greenhouse_sensors,location=INV-A,sensor_id=EC-001 ec=2.0 1719670600000000000
+greenhouse_sensors,location=INV-A,sensor_id=EC-001 ec=2.1 1719670900000000000
+greenhouse_sensors,location=INV-A,sensor_id=EC-001 ec=2.0 1719671200000000000
+greenhouse_sensors,location=INV-A,sensor_id=EC-001 ec=1.9 1719671500000000000
+greenhouse_sensors,location=INV-A,sensor_id=EC-001 ec=1.8 1719671800000000000
+greenhouse_sensors,location=INV-A,sensor_id=EC-001 ec=1.9 1719672100000000000
+
+# Datos del invernadero B
+greenhouse_sensors,location=INV-B,sensor_id=TEMP-002 temperature=21.8 1719670000000000000
+greenhouse_sensors,location=INV-B,sensor_id=TEMP-002 temperature=22.3 1719670300000000000
+greenhouse_sensors,location=INV-B,sensor_id=HUM-002 humidity=66.2 1719670000000000000
+greenhouse_sensors,location=INV-B,sensor_id=HUM-002 humidity=65.8 1719670300000000000
+greenhouse_sensors,location=INV-B,sensor_id=PH-002 ph=6.3 1719670000000000000
+greenhouse_sensors,location=INV-B,sensor_id=PH-002 ph=6.2 1719670300000000000
